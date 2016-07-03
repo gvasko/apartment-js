@@ -9,6 +9,9 @@ angular.module('apartmentsApp').
 			when('/welcome', {
 				template: '<welcome></welcome>'
 			}).
+			when('/apartments', {
+				template: '<apartments></apartments>'
+			}).
 			otherwise('/welcome');
 		}
 ]);

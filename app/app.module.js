@@ -2,5 +2,6 @@
 
 angular.module('apartmentsApp', [
 	'ngRoute',
-	'welcome'
+	'welcome',
+	'apartments'
 ]);
