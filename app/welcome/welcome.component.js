@@ -1,14 +1,12 @@
 'use strict';
 
-angular.module('welcome').component('welcome', {
+angular.module('apartmentsApp').component('welcome', {
 	templateUrl: 'welcome/welcome.template.html',
-	controller: function WelcomeController($http) {
+	controller: ['commonInfo', function WelcomeController(commonInfo) {
 		var self = this;
-		
-		$http.get('data/common-information.json').then(function(response) {
-			self.info = response.data;
+		commonInfo.getCommonInfo().then(function(info) {
+			self.info = info;
 		});
-
 		$('.carousel').carousel({ interval: 5000 });
-	}
+	}]
 });

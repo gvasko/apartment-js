@@ -2,11 +2,10 @@
 
 angular.module('apartmentsApp').component('myFooter', {
 	templateUrl: 'my-footer/my-footer.template.html',
-	controller: function MyFooterController($http) {
+	controller: ['commonInfo', function MyFooterController(commonInfo) {
 		var self = this;
-		
-		$http.get('data/common-information.json').then(function(response) {
-			self.info = response.data;
+		commonInfo.getCommonInfo().then(function(info) {
+			self.info = info;
 		});
-	}
+	}]
 });

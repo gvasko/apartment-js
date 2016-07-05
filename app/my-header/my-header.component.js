@@ -2,11 +2,10 @@
 
 angular.module('apartmentsApp').component('myHeader', {
 	templateUrl: 'my-header/my-header.template.html',
-	controller: function MyHeaderController($http) {
+	controller: ['commonInfo', function MyHeaderController(commonInfo) {
 		var self = this;
-		
-		$http.get('data/common-information.json').then(function(response) {
-			self.info = response.data;
+		commonInfo.getCommonInfo().then(function(info) {
+			self.info = info;
 		});
-	}
+	}]
 });
