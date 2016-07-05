@@ -2,11 +2,11 @@
 
 angular.module('apartmentsApp').component('apartments', {
 	templateUrl: 'apartments/apartments.template.html',
-	controller: ['$http', function ApartmentsController($http) {
+	controller: ['ApartmentModel', function ApartmentsController(ApartmentModel) {
 		var self = this;
 		
-		$http.get('data/apartments.json').then(function(response) {
-			self.apartmentList = response.data;
+		ApartmentModel.getApartments().then(function(apartments) {
+			self.apartmentList = apartments;
 		});
 	}]
 });
