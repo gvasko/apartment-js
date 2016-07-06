@@ -6,7 +6,8 @@
 		"address": "Miskolc, Hogyishívják utca 2.",
 		"thumbnailImageUrl": "data/kispolgar/kispolgar-utca-kicsi.jpg",
 		"imageUrls": [
-			"data/kispolgar/kispolgar-utca.jpg"
+			"data/kispolgar/kispolgar-utca.jpg",
+			"data/kispolgar/kispolgar-udvar.jpg"
 		],
 		"descriptions": [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
@@ -20,7 +21,8 @@
 		"address": "Mályi, Tópart utca 7.",
 		"thumbnailImageUrl": "data/suburb1/suburb1-haz-kicsi.jpg",
 		"imageUrls": [
-			""
+			"data/suburb1/suburb1-haz.jpg",
+			"data/suburb1/suburb1-kert.jpg"
 		],
 		"descriptions": [
 			"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",

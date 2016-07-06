@@ -201,3 +201,52 @@ footer p {
         clear: both;
     }
 }
+
+/* From Angular tutorial */
+.apartment {
+  background-color: white;
+  display: none;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 2em;
+  width: 400px;
+  display: block;
+}
+
+.apartment-main-image {
+  background-color: white;
+  float: left;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 450px;
+}
+
+.apartment-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.apartment-thumbs img {
+  height: 100px;
+  padding: 1em;
+  width: 100px;
+}
+
+.apartment-thumbs li {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em;
+}
+
+.thumb {
+  float: left;
+  height: 100px;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  width: 100px;
+}

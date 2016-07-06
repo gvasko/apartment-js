@@ -12,6 +12,9 @@ angular.module('apartmentsApp').
 			when('/apartments', {
 				template: '<apartments></apartments>'
 			}).
+			when('/apartments/:apartmentID', {
+				template: '<apartment-details></apartment-details>'
+			}).
 			otherwise('/welcome');
 		}
 ]);

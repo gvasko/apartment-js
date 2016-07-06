@@ -21,6 +21,19 @@ angular.module('apartmentsApp').factory('ApartmentModel', ['$http', '$q', functi
 			});
 
 			return deferred.promise;
+		},
+		
+		getApartment: function(apartmentID) {
+			var deferred = $q.defer();
+			
+			this.getApartments().then(function(apartments) {
+				var selected = apartments.find(function(apartment) {
+					return apartment.id == apartmentID;
+				});
+				deferred.resolve(selected);
+			});
+			
+			return deferred.promise;
 		}
 	}
 }]);
